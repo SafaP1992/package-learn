@@ -1,0 +1,28 @@
+{
+    "name": "vafa/packagelearn",
+    "description": "A New Package.",
+    "authors": [
+        {
+            "name": "Safa Pourtavakkoli",
+            "email": "s@example.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Vafa\\Packagelearn": "src/"
+        }
+    },
+    "require": {
+        "laravel/framework": "^8.40"
+    },    
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shahcode\\BigBlueButton\\Provider\\PackagelearnServiceProvider"
+            ],
+            "aliases": {
+                "Project": "Shahcode\\BigBlueButton\\Facade\\Project"
+            }
+        }
+    }
+}
